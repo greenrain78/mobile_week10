@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    tags:
+      - 'v*'     # v1.0.0 같은 태그 푸시만 작동
+
   workflow_dispatch:  # 수동 실행도 허용
 
 jobs:
